@@ -1,0 +1,68 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #667eea, #764ba2);  /* Gradient background */
+    color: #fff;  /* White text */
+    text-align: center;
+    padding: 50px;
+}
+
+/* Container box for the game */
+.container {
+    background-color: rgba(0, 0, 0, 0.6);  /* Semi-transparent black */
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Title styling */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Input field styling */
+input[type="text"] {
+    padding: 10px;
+    font-size: 18px;
+    width: 60%;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #00c9a7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #00a693;
+}
+
+/* Common styling for messages */
+.message {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+/* Success message background */
+.message.success {
+    background-color: #28a745;
+}
+
+/* Error message background */
+.message.error {
+    background-color: #dc3545;
+}

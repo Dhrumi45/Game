@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Letter Guessing Game</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🔠 Letter Guessing Game (A–Z)</h1>
+
+        <!-- Show message only if one exists -->
+        {% if message %}
+            <!-- Conditional class based on success/failure -->
+            <div class="message {% if success %}success{% else %}error{% endif %}">
+                {{ message|safe }}  <!-- 'safe' lets HTML tags render (like <br>) -->
+            </div>
+        {% endif %}
+
+        <!-- If the game is still ongoing -->
+        {% if not success %}
+            <!-- Guess form -->
+            <form method="POST">
+                <input type="text" name="guess" maxlength="1" placeholder="Enter a letter" required autofocus>
+                <button type="submit">Guess</button>
+            </form>
+        {% else %}
+            <!-- Play again form -->
+            <form method="POST">
+                <button type="submit" name="action" value="play_again">🔁 Play Again</button>
+            </form>
+        {% endif %}
+    </div>
+</body>
+</html>
