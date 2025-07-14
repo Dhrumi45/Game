@@ -9,3 +9,6 @@ The web version is built using the Flask framework. It provides a simple web int
 ## 
 ## 🎮 Bricks Breaker
 Bricks Breaker is a simple block-breaking game built using Pygame. You control a paddle at the bottom of the screen by moving the paddle left or right and must bounce a ball to destroy all blocks. The game ends if the ball falls below the paddle.
+## 
+## 🟦🔴Ball Dodge Game
+This is a simple arcade-style game built using Pygame. The player controls a blue rectangle at the bottom of the screen using the left and right arrow keys, aiming to avoid red balls that fall from the top. Each ball moves downward at a random speed and spawns in random positions. If any ball collides with the player, a "GAME OVER" message is displayed and the game ends after a short pause.
